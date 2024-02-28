@@ -27,10 +27,10 @@ document.getElementById('send-message-us-form').addEventListener('click', () => 
 
 function sendForm() {
     let date = Date();
-    let name = document.forms['message-us-form']['name'];
-    let birth = document.forms['message-us-form']['birth'];
-    let gender = document.forms['message-us-form']['gender'];
-    let message = document.forms['message-us-form']['message'];
+    let name = document.forms['message-form']['name'];
+    let birth = document.forms['message-form']['birth'];
+    let gender = document.forms['message-form']['gender'];
+    let message = document.forms['message-form']['message'];
     if(name.value == '' || birth.value == '' || gender.value == '' || message.value == '') {
         alert('Harap Periksa Kembali Inputan Anda');
     }

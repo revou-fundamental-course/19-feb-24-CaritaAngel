@@ -20,7 +20,7 @@
         </div>
     </nav>
     <header>
-        <h1>Hi <span>User</span>, Welcome to Our Website</h1>
+        <h1 id="user">Hi User, Welcome to Our Website</h1>
         <p>We are one of the best Health Consultation Hospital in the world</p>
         <img class="img" src="https://arsitagx-master.s3.ap-southeast-1.amazonaws.com/img_medium/1464/641/4381/photo-front-view-rumah-sakit-murni-teguh-desain-arsitek-oleh-pt-global-rancang-selaras.jpeg">
         <img class="img" src="https://tse4.mm.bing.net/th?id=OIP.8YhQ0G39roMh8mYUIAqbBgHaFj&pid=Api&P=0&h=180">
@@ -47,7 +47,7 @@
     </section>
     <section>
         <h1>Message Us</h1>
-        <form class="message-us-form" name="message-us-form">
+        <form class="message-us-form" name="message-form">
             <div class="input-form">
                 <div>
                     <label class="field-title">Nama :</label>
@@ -87,5 +87,11 @@
         </form>
     </section>
     <script src="js/script.js"></script>
+    <script>
+        const UserName = prompt("Please enter your name : ")
+        if(UserName){
+            document.getElementById("user").innerHTML = 'Hi ${userName}, Welcome to Our Website'
+        }
+    </script>
 </body>
 </html>
